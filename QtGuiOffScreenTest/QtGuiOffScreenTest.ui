@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QtGuiOffScreenTestClass</class>
+ <widget class="QWidget" name="QtGuiOffScreenTestClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1156</width>
+    <height>1068</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QtGuiOffScreenTest</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" columnstretch="1,1">
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Draw with GraphicsView</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView1">
+        <property name="minimumSize">
+         <size>
+          <width>548</width>
+          <height>492</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>548</width>
+          <height>492</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Standard Widget</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QtTestUI" name="widget" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>546</width>
+          <height>488</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>546</width>
+          <height>488</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>Draw as a QPixmap</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QGraphicsView" name="graphicsView2">
+        <property name="minimumSize">
+         <size>
+          <width>548</width>
+          <height>492</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>548</width>
+          <height>492</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>Draw with QOpenGLPaintDevice as OpenGL Texture</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QtOpenGL" name="openGLWidget"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QtTestUI</class>
+   <extends>QWidget</extends>
+   <header>qttestui.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QtOpenGL</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">qtopengl.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="QtGuiOffScreenTest.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/QtGuiOffScreenTest">
+        <file>DarkStyle.qss</file>
+    </qresource>
+</RCC>
