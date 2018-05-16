@@ -172,10 +172,8 @@ void QtOpenGL::paintGL()
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-	//float fScale = logicalDpiY() / 96;
-	//float fScale2 = devicePixelRatioF();
-	//qDebug() << "scale " << fScale << " / " << fScale2;
-	glViewport(0, 0, width(), height());
+	float m_fPixelRatio = devicePixelRatioF();
+	glViewport(0, 0, m_fPixelRatio * width(), m_fPixelRatio * height());
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	glMatrixMode(GL_MODELVIEW);
