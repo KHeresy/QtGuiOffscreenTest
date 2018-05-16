@@ -1,4 +1,6 @@
 #include <array>
+#include <chrono>
+
 #include "QtOpenGL.h"
 
 #include <QMouseEvent>
